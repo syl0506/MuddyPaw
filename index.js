@@ -2,7 +2,7 @@
 var focusedPanel;
 
 function OnInit(){
-	OnClickPannel("Home");
+	OnClickPannel("Details");
 }
 
 function HideAllPanel(){
