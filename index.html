@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Muddy Paw Adventure Gear</title>
+
+<!-- styles-->
+<link rel = "stylesheet" type = "text/css" href = "style.css">
+
+<!-- fonts -->
+<link href="https://linotype.com/1245613/avenir-family.html" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<script type="text/javascript" src="index.js"></script>
+</head>
+<body onload="OnInit()">
+
+	<div class="header" >
+		<ul id = "nav">
+			<li><a href="javascript:void(0);" onClick="OnClickPannel('cat')">For Cats</a></li>
+			<li><a href="javascript:void(0);" onClick="OnClickPannel('dog')">For Dogs</a></li>
+			<li><a href="javascript:void(0);" onClick="OnClickPannel('Home')">
+				<img id ="logoImg" src="logo.png"  />
+			</a></li>
+			<li><a href="javascript:void(0);" onClick="OnClickPannel('story')">Stories</a></li>
+			<li><a href="javascript:void(0);" onClick="OnClickPannel('cart')">My Carts</a></li>
+		</ul>
+	 </div>
+
+	<!-- Landing page -->
+	 <div id ="landing" class="panel" >
+		<img src=" background.png" width=100% />
+		<div id ="mainText">
+            <h1> TAKE AN</br> <span style="color: #FF8D48"> ADVENTURE </span> </br> WITH YOUR </br> BUDDY</h1>
+			 <button id = "mainBtn" onclick="javascript:void(0)">SHOP NOW</button>
+
+        </div>
+	 </div>
+
+	<!-- For cats -->
+	<div id ="forCats" class="panel">
+		<img src=" ForCats.png" width=100% />
+
+		<div class="itemContaitner">
+			<table class ="itemTable" cellpadding="10">
+				<tr>
+					<td>
+						<div class="itemBox">
+							<img src=" harness.png" />
+							<p><br></p>
+							<h3>BODY HARNESS</h3>
+							<h3>$ 12.99</h3>
+							<br>
+							<button id= "detailBtn" onclick="OnClickPannel('Details')">DETAILS</button>
+						</div>
+					</td>
+					<td>
+						<div class="itemBox">
+							<img src="gpstracker.png" />
+							<p><br></p>
+							<h3>GPS TRACKER</h3>
+							<h3>$ 40.99</h3>
+							<br>
+							<button id= "detailBtn" onclick="OnClickPannel('Details')">DETAILS</button>
+						</div>
+					</td>
+					<td>
+						<div class="itemBox">
+							<img src=" water.png" />
+							<p><br></p>
+							<h3>WATER BOTTLE</h3>
+							<h3>$ 12.99</h3>
+							<br>
+							<button id= "detailBtn" onclick="OnClickPannel('Details')">DETAILS</button>
+						</div>
+					</td>
+					<td>
+						<div class="itemBox">
+							<img src=" foodpouch.png" />
+							<p><br></p>
+							<h3>FOOD POUCH</h3>
+							<h3>$ 9.99</h3>
+							<br>
+							<button id= "detailBtn" onclick="OnClickPannel('Details')">DETAILS</button>
+						</div>
+					</td>
+
+				<tr>
+			</table>
+		</div>
+	 </div>
+
+	<!-- For cats -->
+	<div id ="forDogs" class="panel">
+		<img src=" ForDogs.png" width=100% />
+
+		<div class="itemContaitner">
+			<table class ="itemTable" cellpadding="10">
+				<tr>
+					<td>
+						<div class="itemBox">
+							<img src=" harness_dog.png" />
+							<p><br></p>
+							<h3>NYLON HARNESS</h3>
+							<h3>$ 12.99</h3>
+							<br>
+							<button id="detailBtn" onclick="OnClickPannel('Details')">DETAILS</button>
+
+						</div>
+					</td>
+					<td>
+						<div class="itemBox">
+							<img src=" gpstracker.png" />
+							<p><br></p>
+							<h3>GPS TRACKER</h3>
+							<h3>$ 12.99</h3>
+							<br>
+							<button id= "detailBtn" onclick="OnClickPannel('Details')">DETAILS</button>
+						</div>
+					</td>
+					<td>
+						<div class="itemBox">
+							<img src=" water_dog.png" />
+							<p><br></p>
+							<h3>WATER BOTTLE</h3>
+							<h3>$ 12.99</h3>
+							<br>
+							<button id= "detailBtn" onclick="OnClickPannel('Details')">DETAILS</button>
+						</div>
+					</td>
+					<td>
+						<div class="itemBox">
+							<img src=" foodpouch.png" />
+							<p><br></p>
+							<h3>FOOD POUCH</h3>
+							<h3>$ 12.99</h3>
+							<br>
+							<button id= "detailBtn" onclick="OnClickPannel('Details')">DETAILS</button>
+						</div>
+					</td>
+
+				<tr>
+			</table>
+		</div>
+	 </div>
+
+
+	<!-- For cats -->
+	<div id ="details" class="panel">
+		<table class ="detailTable">
+
+			<tr style="text-align:center">
+				<TD colspan=2>
+					<P>
+					Home / For Cat / Body Harness
+					</P>
+				</TD>
+			</tr>
+
+			<tr>
+				<td width="50%" style="text-align:right">
+					<img src=" harness_full.png" width=100% />
+				</td>
+
+				<td width="50%" id="infoBox">
+					<h2>BODY HARNESS</h2>
+					<h4>$ 12.99</h4>
+
+					<h4><br>Change Size<br></h4>
+
+					<div style="display:inline-block; vertical-align: middle;">
+						<button class="sizeButton">Tiny</button>
+						<button class="sizeButton">S</button>
+						<button class="sizeButton">M</button>
+						<button class="sizeButton">L</button>
+					</div>
+
+
+					<h4><br>Change Color<br></h4>
+
+					<div style="display:inline-block; vertical-align: middle;">
+						<button class="colorButton_s" style=" background-color:#F84445;"></button>
+						<button class="colorButton" style=" background-color:black;"></button>
+						<button class="colorButton" style=" background-color:#AD36FF;"></button>
+						<button class="colorButton" style=" background-color:#2F7300;"></button>
+						<button class="colorButton" style=" background-color:#160093;"></button>
+						<button class="colorButton" style=" background-color:#FF5C00;"></button>
+					</div>
+
+					<h6><br>Strawberry</h6>
+					<br>
+					<button id ="addToCartBtn"> Add to cart</button>
+
+				</td>
+			</tr>
+
+			<tr style="text-align:left">
+				<TD colspan=2>
+					<div id="dscBox">
+
+						<h2>Descritpion</h2>
+						<P>
+						<br>
+						Lead your cat on a stress-free walk with the PetSafe Easy Walk Harness. When your cat pulls, the Easy Walk Harness uses gentle pressure on the chest and shoulder blades to steer your dog to the side and refocus his attention on you. The chest strap rests low on the breastbone instead of the throat to eliminate choking, coughing and gagging.<br><br>
+
+						- Discourages your cat from pulling, lunging and jumping while on leash<br>
+						- Low chest strap prevents choking, coughing and gagging<br>
+						- 4 adjustment points provide maximum comfort and reliable fit<br>
+						- Made from soft, but strong, nylon; Quick snap buckles located on belly straps for easy on and off<br>
+						- Includes detailed training and fitting guide; Complementary color on belly strap to easily identify top and bottom
+						</P>
+					</div>
+				</TD>
+			</tr>
+		</table>
+	</div>
+
+
+	<div class='footer'>
+		<div id="subscriptionBox">
+			<div style="float:left">
+				<h4>
+				SIGN UP FOR FUTURE PRODUCT UPDATES!
+				</h4>
+			</div>
+
+			<div style=" float:right">
+
+				<form style="margin-left=5%;">
+					<input type="text" name="LastName" value="Enter your email address" style ="width: 70%;"><input type="submit" value="Submit" >
+				</form>
+			</div>
+		</div>
+
+		<div class="extraInfo">
+			<ul id = "nav">
+				<li><p>CONNECT: </p></li>
+				<li><a href="javascript:void(0);"><img src="facebook.png" width="30px"></a></li>
+				<li><a href="javascript:void(0);"><img src="pinterest2.png" width="30px"></a></li>
+				<li><a href="javascript:void(0);"><img src="instagram.png" width="65px"></a></li>
+
+			</ul>
+		</div>
+
+		<div class="extraInfo">
+			<ul id = "nav">
+				<li><a href="javascript:void(0);">CONTACT</a></li>
+				<li><a href="javascript:void(0);">PRIVACY</a></li>
+				<li><a href="javascript:void(0);">TERMS</a></li>
+				<li><a href="javascript:void(0);">ACCESSIBLITY</a></li>
+			</ul>
+		</div>
+
+		<div id = "rights" style="text-align:center" >
+			<p>@ 2017 Muddy Paws adventure Gear Corporation. All Rights Reserved.</p>
+		</div>
+	</div>
+
+</body>
+
+
+</html>
