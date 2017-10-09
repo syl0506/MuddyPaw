@@ -277,13 +277,12 @@ body{
 
 input[type=text] {
     width: 100%;
+
     padding: 12px 20px;
     border: none;
     margin: 18px 0;
     box-sizing: border-box;
-    background-color: rgb(0,0,0);
-    margin: 25px
-    color: #FFF;
+
 }
 
 input[type=button], input[type=submit], input[type=reset] {

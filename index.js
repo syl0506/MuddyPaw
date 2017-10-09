@@ -2,7 +2,7 @@
 var focusedPanel;
 
 function OnInit(){
-	OnClickPannel("Details");
+	OnClickPannel("Home");
 }
 
 function HideAllPanel(){
@@ -33,6 +33,9 @@ function OnClickPannel(option){
 	else if(option == "Details"){
 		document.getElementById("details").style.display = "block";
 
+	}
+	else if (option =="store"){
+		document.getElementById("store").style.display = "block";
 	}
 }
 
