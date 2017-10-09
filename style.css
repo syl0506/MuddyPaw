@@ -48,12 +48,12 @@ body{
 
 .header ul li {
     vertical-align: middle;
-    display: inline-block; /* Arrange list items in horizontal line */
-    list-style-type: none; /* We don't want bullets on our items */
+    display: inline-block;
+    list-style-type: none;
 
 	margin-left: 4%;
     margin-right: 4%;
-    padding: 26px 0;/* / Sets height of nav bar */
+    padding: 26px 0;
 }
 
 
@@ -262,11 +262,11 @@ body{
 }
 
 .extraInfo ul li{
-	 display: inline-block; /* Arrange list items in horizontal line */
-	list-style-type: none; /* We don't want bullets on our items */
+	 display: inline-block;
+	list-style-type: none;
 	margin-left: 2%;
 	margin-right: 2%;
-	padding: 26px 0;/* / Sets height of nav bar */
+	padding: 26px 0;
 }
 .extraInfo ul li a{
 

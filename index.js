@@ -1,4 +1,6 @@
 
+/*-- This Javascript file enables change of mode which changes what is displayed
+on the website. */
 var focusedPanel;
 
 function OnInit(){
